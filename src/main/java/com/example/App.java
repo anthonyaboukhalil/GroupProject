@@ -4,6 +4,9 @@ public final class App {
     private App() {
     }
 
+    public static double oddAvg(int n, int sum){
+        return sum/n;
+    }
  
     public static void main(String[] args) {
         int n  = 50 ;
@@ -18,6 +21,6 @@ public final class App {
         System.out.println("The sum of all even integers is: " + sum);
 
         System.out.println("The sum of all odd integers is: " + sum_odd);
-        System.out.println("Average of all odd integers is: " + (double) sum_odd/n);
+        System.out.println("Average of all odd integers is: " + oddAvg(n, sum_odd));
     }
 }
