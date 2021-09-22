@@ -11,7 +11,7 @@ public final class App {
         int sum = 0;
         int sumDivisibleBy = 0;
         int divisibleCount = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             if(i%2==0)
                 sum+= i;
             if(i % divideby == 0) {
