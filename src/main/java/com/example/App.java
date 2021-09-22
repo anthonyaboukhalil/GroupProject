@@ -9,15 +9,19 @@ public  class App {
     }
  
     public static void main(String[] args) {
-        int n  = 50 ;
+        int n =50 ;
+        int counter=0;
         int sum = 0;
         for (int i = 0; i < n; i++) {
-            if(i%2==0)
+            if(i%2==0){
                 sum+= i;
-
+                counter++;
+            }
         }
+
+
         System.out.println("The sum of all even integers is: " + sum);
-        System.out.println("The average of all even integers is: " + evenAvg(n,sum));
+        System.out.println("The average of all even integers is: " + evenAvg(counter,sum));
     
     }
 }

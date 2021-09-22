@@ -10,6 +10,6 @@ class AppTest {
      */
     @Test
     void testevenAvg() {
-        assertEquals(12, App.evenAvg(50,600));
+        assertEquals(24, App.evenAvg(25,600));
     }
 }
