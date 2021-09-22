@@ -1,9 +1,12 @@
 package com.example;
 
-public final class App {
-    private App() {
-    }
+public  class App {
+    
+    public static  double evenAvg(int n, int sum){
+        int average = sum/n;
+        return average;
 
+    }
  
     public static void main(String[] args) {
         int n  = 50 ;
@@ -14,6 +17,7 @@ public final class App {
 
         }
         System.out.println("The sum of all even integers is: " + sum);
+        System.out.println("The average of all even integers is: " + evenAvg(n,sum));
     
     }
 }
