@@ -18,6 +18,6 @@ public final class App {
         System.out.println("The sum of all even integers is: " + sum);
 
         System.out.println("The sum of all odd integers is: " + sum_odd);
-    
+        System.out.println("Average of all odd integers is: " + (double) sum_odd/n);
     }
 }
