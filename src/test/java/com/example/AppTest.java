@@ -15,4 +15,8 @@ class AppTest {
     void testApp() {
         assertEquals(1, 1);
     }
+    @Test
+    void testAvgDivisibleBy() {
+        assertEquals(30, App.avgDivisibleBy(50, 10));
+    }
 }
