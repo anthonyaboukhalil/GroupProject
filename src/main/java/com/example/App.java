@@ -16,15 +16,26 @@ public  class App {
 
     public static int userInput(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a positive integer ( (-) signs will be removed): ");
-        while(!scanner.hasNextInt()){
-            scanner.next();
-            System.out.println("Please Enter a Valid Integer!\n");
-            System.out.println("Enter a positive integer ( (-) signs will be removed): ");
-        }
-        int x = scanner.nextInt();
+        boolean error = true;
+        System.out.println("Enter a positive integer: ");
+        while(error){
+            while(!scanner.hasNextInt()){
+                scanner.next();
+                System.out.println("Please Enter a Valid Integer!\n");
+                System.out.println("Enter a positive integer: ");
+            }
+            int x = scanner.nextInt();
+            if(x <= 0){
+                System.out.println("Positive integers only please: ");
+                error = true;
+            }else{
+                error = false;
+                scanner.close();
+                return x;
+            }
+    }
         scanner.close();
-        return Math.abs(x);
+        return 1;
     }
 
 
