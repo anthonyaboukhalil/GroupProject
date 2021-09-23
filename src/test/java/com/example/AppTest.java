@@ -46,5 +46,10 @@ class AppTest {
 
         assertEquals(50.0, App.oddAvg(count_odd, sum_odd));
     }
-
+    @Test
+    void testSqrt(){
+        int x = 600;
+        double y = (double) Math.sqrt(x);
+        assertEquals(24.49489742783178, App.sumSqrt(x));
+    }
 }
