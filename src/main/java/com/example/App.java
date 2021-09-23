@@ -37,13 +37,15 @@ public  class App {
         int counter=0;
         int divisor = 10;
         int sum = 0, sum_odd =0, count_odd = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             if(i%2==0){
                 sum+= i;
-                counter++;}
+                if (i != 0)
+                    counter++;}
             else if(i%2==1){
                 sum_odd += i;
-                count_odd++;
+                if (i != 0)
+                    count_odd++;
             }
 
 
