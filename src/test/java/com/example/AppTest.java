@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 class AppTest {
     /**
      * Rigorous Test.
@@ -50,5 +51,4 @@ class AppTest {
 
         assertEquals(50.0, App.oddAvg(count_odd, sum_odd));
     }
-
 }
