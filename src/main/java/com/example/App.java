@@ -86,7 +86,7 @@ public  class App {
 
 
         System.out.println("The sum of all even integers is: " + sum);
-        System.out.printf("The average of all integers divisble by %d is %f%n", divisor, avgDivisibleBy(50, divisor));
+        System.out.printf("The average of all integers divisble by %d is %.2f%n", divisor, avgDivisibleBy(50, divisor));
 
 
         System.out.println("The sum of all odd integers is: " + sum_odd);
