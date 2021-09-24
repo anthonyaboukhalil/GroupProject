@@ -13,6 +13,11 @@ public  class App {
     public static double oddAvg(int n, int sum){
         return (double) sum/n;
     }
+    public static double sumSqrt(int sum){
+        return (double) Math.sqrt(sum);
+    }
+
+
 
     public static int userInput(){
         Scanner scanner = new Scanner(System.in);
@@ -69,6 +74,7 @@ public  class App {
         System.out.println("Average of all odd integers is: " + oddAvg(count_odd, sum_odd));
 
         System.out.println("The average of all even integers is: " + evenAvg(counter,sum));
+        System.out.println("The square root of the sum (" + sum + "): " + sumSqrt(sum));
 
 
     }
