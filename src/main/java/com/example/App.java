@@ -31,18 +31,34 @@ public  class App {
     public static double oddAvg(int n, int sum){
         return (double) sum/n;
     }
+    public static double sumSqrt(int sum){
+        return (double) Math.sqrt(sum);
+    }
+
+
 
     public static int userInput(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a positive integer ( (-) signs will be removed): ");
-        while(!scanner.hasNextInt()){
-            scanner.next();
-            System.out.println("Please Enter a Valid Integer!\n");
-            System.out.println("Enter a positive integer ( (-) signs will be removed): ");
-        }
-        int x = scanner.nextInt();
+        boolean error = true;
+        System.out.println("Enter a positive integer: ");
+        while(error){
+            while(!scanner.hasNextInt()){
+                scanner.next();
+                System.out.println("Please Enter a Valid Integer!\n");
+                System.out.println("Enter a positive integer: ");
+            }
+            int x = scanner.nextInt();
+            if(x <= 0){
+                System.out.println("Positive integers only please: ");
+                error = true;
+            }else{
+                error = false;
+                scanner.close();
+                return x;
+            }
+    }
         scanner.close();
-        return Math.abs(x);
+        return 1;
     }
 
 
@@ -77,6 +93,7 @@ public  class App {
         System.out.println("Average of all odd integers is: " + oddAvg(count_odd, sum_odd));
 
         System.out.println("The average of all even integers is: " + evenAvg(counter,sum));
+        System.out.println("The square root of the sum (" + sum + "): " + sumSqrt(sum));
 
 
     }
